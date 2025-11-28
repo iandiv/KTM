@@ -477,7 +477,7 @@ export default function LetterImageGenerator() {
 
     // Calculate vertical and horizontal centering
     const totalContentHeight = (lines.length * lineHeight) - lineSpacing;
-    const totalContentWidth = maxLineWidth;
+    // const totalContentWidth = maxLineWidth;
     const verticalOffset = (canvasHeight - totalContentHeight) / 2;
 
     // Draw each line
@@ -602,7 +602,7 @@ export default function LetterImageGenerator() {
       return width;
     });
 
-    const maxLineWidth = Math.max(...lineWidths);
+    // const maxLineWidth = Math.max(...lineWidths);
     const totalContentHeight = (lines.length * scaledLineHeight) - scaledLineSpacing;
     const verticalOffset = (highResCanvas.height - totalContentHeight) / 2;
 
